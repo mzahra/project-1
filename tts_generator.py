@@ -31,7 +31,7 @@ def split_text_for_tts(text: str, max_chars: int = MAX_CHARS) -> list:
 
 
 def generate_audio(script_text: str, output_path: str = "output/podcast.mp3",
-                    voice: str = "alloy", model: str = "gpt-4o-mini-tts") -> str:
+                    voice: str = "shimmer", model: str = "gpt-4o-mini-tts") -> str:
     if not script_text or len(script_text.strip()) < 20:
         raise ValueError("Script text is too short to generate audio from.")
 
