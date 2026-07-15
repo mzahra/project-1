@@ -137,7 +137,7 @@ conda install -c conda-forge ffmpeg
 ## Clone the Repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/mzahra/project-1.git
 cd podcast-studio
 ```
 
@@ -165,7 +165,7 @@ pip install -r requirements.txt
 Create a `.env` file:
 
 ```text
-OPENAI_API_KEY=your-openai-api-key
+OPENAI_API_KEY=openai-api-key
 ```
 
 ---
