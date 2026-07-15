@@ -53,7 +53,7 @@ def generate_script(key_points: str, title: str = "", model: str = "gpt-4o-mini"
 
 
 
-# --- quick test ---
+# --- test the class ---
 if __name__ == "__main__":
     with open("output/key_points.txt", "r", encoding="utf-8") as f:
         key_points = f.read()
