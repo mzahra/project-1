@@ -9,7 +9,7 @@ load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 MAX_CHARS = 6000
-TTS_INSTRUCTIONS = "Speak like a warm, engaging podcast host explaining an interesting science topic to a curious general audience. Natural pacing, clear articulation, not rushed."
+TTS_INSTRUCTIONS = "Speak like a warm, engaging podcast host. Use natural pacing and clear pronunciation. Pronounce abbreviations as individual letters unless commonly spoken as words. Pronounce GAI as G-A-I."
 
 
 def split_text_for_tts(text: str, max_chars: int = MAX_CHARS) -> list:
@@ -31,7 +31,7 @@ def split_text_for_tts(text: str, max_chars: int = MAX_CHARS) -> list:
 
 
 def generate_audio(script_text: str, output_path: str = "output/podcast.mp3",
-                    voice: str = "alloy", model: str = "gpt-4o-mini-tts") -> str:
+                    voice: str = "shimmer", model: str = "gpt-4o-mini-tts") -> str:
     if not script_text or len(script_text.strip()) < 20:
         raise ValueError("Script text is too short to generate audio from.")
 

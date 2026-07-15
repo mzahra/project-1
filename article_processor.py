@@ -64,6 +64,9 @@ if __name__ == "__main__":
     clean_text = processor.strip_references(data.text)
     print(f"Original: {len(data.text)} chars -> After stripping references: {len(clean_text)} chars")
 
+    with open('output/title.txt', 'w', encoding="utf-8") as f:
+        f.write(data.title)
+
     with open('output/full_text.txt', 'w', encoding="utf-8") as f:
         f.write(data.text)
 
