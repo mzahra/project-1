@@ -1,5 +1,3 @@
-# --- main.py: Gradio UI (now saves + displays the PDF title) ---
-
 import os
 import gradio as gr
 
@@ -10,7 +8,7 @@ from tts_generator import generate_audio
 
 pdf_processor = PDFProcessor()
 
-VOICES = ["echo", "fable", "onyx", "nova", "shimmer", "coral"]
+VOICES = ["alloy", "echo", "fable", "onyx", "nova", "shimmer", "coral"]
 
 OUTPUT_DIR = "output"
 AUDIO_PATH = os.path.join(OUTPUT_DIR, "podcast.mp3")
