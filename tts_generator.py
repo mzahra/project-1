@@ -2,6 +2,10 @@ import os
 import re
 from openai import OpenAI
 from pydub import AudioSegment
+from dataclasses import dataclass
+from dotenv import load_dotenv
+
+load_dotenv()
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
