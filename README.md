@@ -138,7 +138,7 @@ conda install -c conda-forge ffmpeg
 
 ```bash
 git clone https://github.com/mzahra/project-1.git
-cd podcast-studio
+cd project-1
 ```
 
 ---
@@ -146,7 +146,7 @@ cd podcast-studio
 ## Create a Virtual Environment
 
 ```bash
-conda create -n podcast-studio python=3.11
+conda create -n podcast-studio
 conda activate podcast-studio
 ```
 
