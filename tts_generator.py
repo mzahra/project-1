@@ -2,7 +2,6 @@ import os
 import re
 from openai import OpenAI
 from pydub import AudioSegment
-from dataclasses import dataclass
 from dotenv import load_dotenv
 
 load_dotenv()
